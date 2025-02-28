@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+    *,
+    *::before,
+    *::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    
+    /* For Firefox. */
+    * {
+        scrollbar-width: none;
+    }
+    
+    /* For WebKit (Chrome & Safari). */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@theme {
+    --drop-shadow-white: 0 0 10px rgb(242, 244, 255);
+    --drop-shadow-blue: 0 0 10px rgb(179, 187, 236);
+}
+
+
+
+:root {
+    --blue-1: rgb(179, 187, 236);
+    --ice-2: #7eddf2;
+    --green-3: #28f050;
+    --yellow-4: #cef725;
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+}
+
+.nav {
+    padding: 40px 20px 30px 20px;
+}
+
+.Background {
+    background: url(assets/home.jpg) no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+   
+}
+
+.number-behind {
+    font-size: 8rem;
+    position: absolute;
+    z-index: 1;
+    top: -4rem;
+    left: -1rem;
+    font-weight: 800;
+    color: #103a5f;
+}
